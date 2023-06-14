@@ -20,8 +20,11 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
+// to get all the coins data
 Route.get('/all-coins', 'CoinsController.index')
 
+// to get single coin data via id
 Route.get('/coins/:id', 'CoinsController.show')
 
+// to add coinGecko data into db
 Route.post('/coins', 'CoinsController.store')

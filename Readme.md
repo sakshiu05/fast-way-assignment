@@ -6,6 +6,9 @@ This is a sample project created with Adonis.js, a powerful Node.js framework. I
 
 - Node.js (v12 or higher)
 - npm (v6 or higher)
+- adonisjs
+- lucid (for postgres connection)
+- axios (for calling coingecko api)
 - PostgreSQL (v10 or higher)
 
 ## Installation
@@ -62,9 +65,9 @@ This is a sample project created with Adonis.js, a powerful Node.js framework. I
 
         GET /coins: Retrieve all coins.
 
-        GET /coins/:id: Retrieve a coin by ID.
+        GET /coins/:id : Retrieve a coin by ID.
 
-        POST /coins: Create a new coin.
+        POST /coins: Create a new coin. As mentioned I have added the coin gecko api via axios and stored its data into the db you can fetch this data with get api's. 
 
 Note: Replace your-domain with the actual domain or localhost and your-port with the server port (default is 3333).
         
